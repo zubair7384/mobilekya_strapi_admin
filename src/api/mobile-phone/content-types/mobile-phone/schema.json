@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mobile_phones",
+  "info": {
+    "name": "MobilePhone",
+    "singularName": "mobile-phone",
+    "pluralName": "mobile-phones",
+    "displayName": "mobile-phone",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "brand": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "releaseDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "network": {
+      "type": "blocks"
+    },
+    "display": {
+      "type": "enumeration",
+      "enum": [
+        "type",
+        "size"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "review",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "rating": {
+      "type": "integer"
+    },
+    "comment": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "mobile_phone": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mobile-phone.mobile-phone"
+    }
+  
+  }
+}

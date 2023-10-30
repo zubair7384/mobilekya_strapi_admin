@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "price_history",
+  "info": {
+    "name": "PriceHistory",
+    "description": "Tracks the price changes of mobile phones over time",
+    "singularName": "price-history",
+    "pluralName": "price-historys",
+    "displayName": "price-history"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "mobile_phone": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mobile-phone.mobile-phone"
+    }
+  }
+}
